@@ -19,5 +19,6 @@ from django.urls import path, include  # include is used to include app URLs
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('core.urls')),  # This includes the 'core' app URLs
+    path('', include('land.urls')),  # This includes the 'core' app URLs
+    path('api/', include('core.urls')),  # This includes the 'core' app URLs
 ]
