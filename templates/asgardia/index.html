@@ -1,0 +1,1069 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ASGARDIA FOUNDATION</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Asgardia Foundation" name="keywords">
+    <meta content="Asgardia Foundation" name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/asgardia/LOGO.webp' %}" type="image/gif" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="{% static 'lib/flaticon/font/flaticon.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+    <!-- Top Bar Start -->
+    <div class="top-bar d-none d-md-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="top-bar-left">
+                        <div class="text">
+                            <i class="fa fa-phone-alt"></i>
+                            <p><a href="tel:+91 8667511342" class="text-white">+91 8667511342</a></p>
+                        </div>
+                        <div class="text">
+                            <i class="fa fa-envelope"></i>
+                            <p><a href="mailto:info@asgardiafoundation.org.in" class="text-white">info@asgardiafoundation.org.in</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="top-bar-right">
+                        <div class="social">
+                            <a href="https://x.com/asgardiafounda3"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/asgardiafoundation/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com/in/asgardia-foundation-0b5a7921b?originalSubdomain=in"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/asgardia_foundation?igsh=MTZzMDZ6ODJnYmd3bw=="><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Bar End -->
+
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="{% url 'home' %}">
+                    <img src="{% static 'img/asgardia/LOGO.webp' %}" alt="logo"/>
+                    <p><span>Asgardia</span><br>Foundation</p>
+                </a>
+            </div>
+            <!-- logo end -->
+        </div>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+                <a href="{% url 'home' %}" class="nav-item nav-link active">Home</a>
+                <a href="{% url 'about' %}" class="nav-item nav-link">About</a>
+                <a href="{% url 'get_involved' %}" class="nav-item nav-link">Involved</a>
+                <a href="{% url 'event' %}" class="nav-item nav-link">Events</a>
+                <a href="{% url 'gallery' %}" class="nav-item nav-link">Gallery</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our work</a>
+                    <div class="dropdown-menu">
+                        <a href="{% url 'employement' %}" class="dropdown-item">Employment</a>
+                        <a href="{% url 'women_empowerment' %}" class="dropdown-item">Women Empowerment</a>
+                        <a href="{% url 'education' %}" class="dropdown-item">Education</a>
+                        <a href="{% url 'health' %}" class="dropdown-item">Health</a>
+                        <a href="{% url 'environment' %}" class="dropdown-item">Environment</a>
+                        <a href="{% url 'daily_meals' %}" class="dropdown-item">Daily Meals</a>
+                        <a href="{% url 'livelihood' %}" class="dropdown-item">Livelihood</a>
+                        <a href="{% url 'csr_impact' %}" class="dropdown-item">CSR Impact</a>
+                    </div>
+                </div>
+                <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+
+
+
+    <!-- Carousel Start -->
+    <div class="carousel">
+        <div class="container-fluid">
+            <div class="owl-carousel">
+                <div class="carousel-item">
+                    <div class="carousel-img">
+                        <img src="{% static 'img/images/11.webp' %}" alt="Image">
+
+                    </div>
+                    <div class="carousel-text">
+                        <h1>Empower the nation with great vision - Indian</h1>
+                        <!-- <p>Children are the world's most valuable resource and its best hope for the future. — John F. Kennedy</p> -->
+                        <div class="carousel-btn"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-img">
+                        <img src="{% static 'img/images/child3.webp' %}" alt="Image">
+
+                    </div>
+                    <div class="carousel-text">
+                        <h1 class="big-para">Empowering the individual means empowering the nation. And empowerment is best served through rapid economic growth with rapid social change.</h1>
+                        <!-- <p>Children are the world's most valuable resource and its best hope for the future.</p> -->
+                        <div class="carousel-btn"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-img">
+                        <img src="{% static 'img/gallary/img 41.jpg' %}" alt="Image">
+                    </div>
+                    <div class="carousel-text">
+                        <h1>Extend a helping hand and get involved.</h1>
+                        <!-- <p>
+                            Asgardia Foundation is dedicated to creating positive change in the lives of individuals and
+                            communities across India. Through our commitment to Mission, we strive to address pressing
+                            social issues and uplift those in need
+                        </p> -->
+                        <div class="carousel-btn"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-img">
+                        <img src="{% static 'img/images/40.webp' %}" alt="Image">
+                    </div>
+                    <div class="carousel-text">
+                        <h1>Spreading smiles to millions.</h1>
+                        <!-- <p>Green revolution Education scholarship. Save the children, Employment training, Women Empowerment & Social Engineering</p> -->
+                        <div class="carousel-btn"></div>
+                    </div>
+                </div>
+                <!-- <div class="carousel-item">
+                    <div class="carousel-img">
+                        <img src="{% static 'img/images/child3.webp' %}" alt="Image">
+                    </div>
+                    <div class="carousel-text">
+                        <h1>Spreading smiles to millions.</h1>
+                        <p>Green revolution Education scholarship. Save the children, Employment training, Women Empowerment & Social Engineering</p>
+                        <div class="carousel-btn"></div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Video Modal Start-->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- About Start -->
+    <div class="about about2">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- <div class="col-lg-6">
+                    <div class="about-img" data-parallax="scroll" data-image-src="img/about.jpg"></div>
+                    <img id="about-pic" src="{% static 'img/about.jpg' %}" alt="">
+                </div> -->
+                <div class="col-lg-12">
+                    <div class="section-header text-center msection-header">
+                        <p>Learn About Us</p>
+                        <h2>Worldwide non-profit charity organization</h2>
+                    </div>
+                    <div class="about-tab">
+                        <ul class="nav nav-pills nav-justified">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#tab-content-1">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#tab-content-2">Mission</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#tab-content-3">Vision</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="tab-content-1" class="container text-center tab-pane active msection-header">
+                                Asgardia Foundation is one of the top NGOs in India for social, economic, skilling, livelihood, environmental protection, woman empowerment, employment schemes, education innovation, and health care awareness. Founded in Tamil Nadu, Chennai, in 2017. Our Foundation is well versed in Skilling for the Young Nation of India. Our Foundation programs focused on Vocation, Life, Soft, Technical Empowerment Skill, and Education Enhancement.   
+                            </div>
+                            <div id="tab-content-2" class="container text-center tab-pane fade msection-header">
+                                At Asgardia Foundation, our mission is dedicated to creating
+                                positive change in the lives of individuals and communities across India. We are
+                                dedicated to hrough our commitment to Mission, we strive to address pressing social
+                                issues and uplift those in need. <br><br> Our mission is to alleviate poverty and promote sustainable development by empowering communities through education, healthcare, and economic opportunities. We envision a world where every individual has access to basic necessities, enjoys equal opportunities, and lives in a sustainable environment, fostering a global community built on compassion and social justice
+                            </div>
+                            <div id="tab-content-3" class="container text-center tab-pane fade msection-header">
+                                We envision a world where every individual has the opportunity to thrive through
+                                education, skills development, and empowerment. Our goal is to create a future where Education Scholarships enable all deserving students to pursue their dreams and
+                                unlock their full potential, regardless of their financial background.
+                                
+                                Employment Training equips individuals with the skills and knowledge necessary to secure meaningful and sustainable careers, fostering economic independence and personal growth.
+
+                                <ul class="vission">
+                                    <li><b>Equality:</b> Commitment to equal rights and opportunities for all.</li>
+                                    <li><b>Integrity:</b> Upholding honesty, transparency, and ethical conduct.</li>
+                                    <li><b>Empowerment:</b> Empowering individuals and communities to take control of their own destinies.</li>
+                                    <li><b>Sustainability:</b> Promoting practices that ensure long-term environmental and social sustainability.</li>
+                                    <li><b>Collaboration:</b> Fostering partnerships and collaborations to maximize impact.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="service">
+        <div class="container">
+            <div class="section-headers text-center">
+                <p>What We Do ?</p>
+                <h2>We believe that we can save more lifes with you</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="flaticon-diet"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>Daily meals project and healthy food</h3>
+                            <p>The Asgardia Foundation's commitment to providing healthy food options is a commendable
+                                effort towards promoting well-being and nutrition.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <!-- <i class="flaticon-water"></i> -->
+                             <img src="{% static 'img/asgardia/women-empowerment-inner.png' %}" width="85px" alt="">
+
+                        </div>
+                        <div class="service-text">
+                            <h3>Women Empowerment</h3>
+                            <p> Our  Asgardia Foundation  women through innovative community practices, empowering them to seek healthcare and bring sustainable changes in the community, while also supporting them to become aware, skilled, and financially independent.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="flaticon-healthcare"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>Asgardia Unemployement Eradication scheme</h3>
+                            <p>Our scheme has enhanced the eradication of unemployment in the nation. Our track record has been proven by more than 1+ lakhs of employment in the nation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="flaticon-education"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>Education</h3>
+                            <p>We believe that education is the key to unlocking the potential within every child, regardless of their economic background. We offer a supportive and nurturing environment where students can thrive academically, develop essential life skills, and gain the confidence needed to pursue their dreams.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="flaticon-home"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>Environmental protection</h3>
+                            <p>Plant native trees to sequester carbon and enhance ecosystem resilience. Develop and deliver educational programs to communities about climate change and adaptive strategies Integrate hygiene education into school curricula, emphasizing proper handwashing practices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="flaticon-social-care"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>Health Care</h3>
+                            <p>Our Foundation's comprehensive and community-centric health programme takes primary healthcare services to the doorsteps of underserved communities in both rural and urban India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Facts Start -->
+    <div class="facts">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="facts-item">
+                        <i class="flaticon-home"></i>
+                        <div class="facts-text">
+                            <h3 class="facts-plus" data-toggle="counter-up">1,00,000</h3>
+                            <!-- <h3 class="facts-plus">1L</h3> -->
+                            <p>Employment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="facts-item">
+                        <i class="flaticon-charity"></i>
+                        <div class="facts-text">
+                            <h3 class="facts-plus" data-toggle="counter-up">10,000</h3>
+                            <!-- <h3 class="facts-plus">10K</h3> -->
+                            <p>Education</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="facts-item">
+                        <i class="flaticon-kindness"></i>
+                        <div class="facts-text">
+                            <h3 class="facts-dollar" data-toggle="counter-up">25,000</h3>
+                            <!-- <h3 class="facts-dollar">25K</h3> -->
+                            <p>Health Care</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center w-95">
+                <div class="col-lg-3 col-md-6">
+                    <div class="facts-item">
+                        <i class="flaticon-donation"></i>
+                        <div class="facts-text">
+                            <h3 class="facts-dollar" data-toggle="counter-up">60,000</h3>
+                            <!-- <h3 class="facts-dollar">60K</h3> -->
+                            <p>Environment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="facts-item">
+                        <i class="flaticon-diet"></i>
+                        <div class="facts-text">
+                            <h3 class="facts-dollar" data-toggle="counter-up">50,000</h3>
+                            <!-- <h3 class="facts-dollar">50</h3> -->
+                            <p>Daily Meals</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+    <!-- Causes Start -->
+    <div class="causes">
+        <div class="container-fluid">
+            <div class="section-headers text-center">
+                <p>Popular Event</p>
+                <h2>Let's know about our foundation event around the world</h2>
+            </div>
+            <!-- <div class="owl-carousel causes-carousel"> -->
+            <div class="own-carousel own-causes-carousel">
+                <div class="causes-item">
+                    <div class="causes-img">
+                        <img src="{% static 'img/gallary/img 1.jpg' %}" alt="Image">
+                    </div>
+                    <div class="causes-progress">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                aria-valuemax="100">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                        <div class="progress-text">
+                            <!-- <p><strong>Raised:</strong> ₹100000</p>
+                                <p><strong>Goal:</strong> ₹50000</p> -->
+                        </div>
+                    </div>
+                    <div class="causes-text">
+                        <a href="blog/post4.html"><h3>ASGARDIA FOUNDATION|VERITASA CSR PROJECT|TAMILNADU APEX SKILL DEVLOPMENT BFSI|SKILL DEVELOPMENT |2024</h3></a>
+                    </div>
+                    <!-- <div class="causes-btn">
+                        <a class="btn btn-custom">Learn More</a>
+                        <a class="btn btn-custom">Donate Now</a>
+                    </div> -->
+                </div>
+                <div class="causes-item">
+                    <div class="causes-img">
+                        <img src="{% static 'img/gallary/img 14.jpg' %}" alt="Image">
+                    </div>
+                    <div class="causes-progress">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                aria-valuemax="100">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                        <div class="progress-text">
+                            <!-- <p><strong>Raised:</strong> ₹100000</p>
+                                <p><strong>Goal:</strong> ₹50000</p> -->
+                        </div>
+                    </div>
+                    <div class="causes-text">
+                        <a href="blog/post5.html"><h3>BONSECOURS COLLEGE FOR WOMEN |MANNARGUDI|SOFTSKILL TRAINING PROGRAM 2023|</h3></a>
+                    </div>
+                    <!-- <div class="causes-btn">
+                        <a class="btn btn-custom">Learn More</a>
+                        <a class="btn btn-custom">Donate Now</a>
+                    </div> -->
+                </div>
+                <div class="causes-item">
+                    <div class="causes-img">
+                        <img src="{% static 'img/gallary/img 53.jpg' %}" alt="Image">
+                    </div>
+                    <div class="causes-progress">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                aria-valuemax="100">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                        <div class="progress-text">
+                            <!-- <p><strong>Raised:</strong> ₹100000</p>
+                                <p><strong>Goal:</strong> ₹50000</p> -->
+                        </div>
+                    </div>
+                    <div class="causes-text">
+                        <a href="blog/post2.html"><h3>HAPPY PONGAL 2023| ASGARDIA FOUNDATION| ANNI VELAKANNI GROUP | CHENNAI</h3></a>
+                    </div>
+                    <!-- <div class="causes-btn">
+                        <a class="btn btn-custom">Learn More</a>
+                        <a class="btn btn-custom">Donate Now</a>
+                    </div> -->
+                </div>
+                <div class="causes-item">
+                    <div class="causes-img">
+                        <img src="{% static 'img/gallary/img 63.jpeg' %}" alt="Image">
+                    </div>
+                    <div class="causes-progress">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+                                aria-valuemax="100">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                        <div class="progress-text">
+                            <!-- <p><strong>Raised:</strong> ₹100000</p>
+                                <p><strong>Goal:</strong> ₹50000</p> -->
+                        </div>
+                    </div>
+                    <div class="causes-text">
+                        <a href="blog/post3.html"><h3>PERIYAR MANNIYAM UNIVERSITY |TANJORE|ASGARDIA FOUNDATION|PREPLACEMENT TRAINING|</h3></a>
+                    </div>
+                    <!-- <div class="causes-btn">
+                        <a class="btn btn-custom">Learn More</a>
+                        <a class="btn btn-custom">Donate Now</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Causes End -->
+
+
+    <!-- Donate Start -->
+    <!-- <div class="donate" data-parallax="scroll" data-image-src="img/donate.jpg">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="donate-content">
+                        <div class="section-header">
+                            <p>Donate Now</p>
+                            <h2>Let's donate to needy people for better lives</h2>
+                        </div>
+                        <div class="donate-text">
+                            <p>
+                                There are various ways to contribute, such as sending money directly to families in
+                                poverty, which empowers them to make choices that best improve their lives.
+                                Additionally, organizations like the Red Cross accept donations to provide essential
+                                services during disasters.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="donate-form">
+                        <form>
+                            <div class="control-group">
+                                <input type="text" class="form-control" placeholder="Name" required="required" />
+                            </div>
+                            <div class="control-group">
+                                <input type="email" class="form-control" placeholder="Email" required="required" />
+                            </div>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-custom active">
+                                    <input type="radio" name="options" checked> ₹10
+                                </label>
+                                <label class="btn btn-custom">
+                                    <input type="radio" name="options"> ₹20
+                                </label>
+                                <label class="btn btn-custom">
+                                    <input type="radio" name="options"> ₹30
+                                </label>
+                            </div>
+                            <div>
+                                <button class="btn btn-custom" type="submit">Donate Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Donate End -->
+
+
+    <!-- Event Start -->
+    <!-- <div class="event">
+        <div class="container">
+            <div class="section-headers text-center">
+                <p>Upcoming Events</p>
+                <h2>Be ready for our upcoming charity events</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="event-item">
+                        <img src="img\images\22.webp" alt="Image">
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <p><i class="fa fa-calendar-alt"></i>01-Jan-45</p>
+                                <p><i class="far fa-clock"></i>8:00 - 10:00</p>
+                                <p><i class="fa fa-map-marker-alt"></i>Chennai</p>
+                            </div>
+                            <div class="event-text">
+                                <h3>Develop a Detailed Event Plan</h3>
+                                <p>
+                                    Venue: Choose locations that are accessible and relevant to your target audience.
+                                </p>
+                                <a class="btn btn-custom" href="">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="event-item">
+                        <img src="img\images\24.webp" alt="Image">
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <p><i class="fa fa-calendar-alt"></i>01-Jan-45</p>
+                                <p><i class="far fa-clock"></i>8:00 - 10:00</p>
+                                <p><i class="fa fa-map-marker-alt"></i>kancheepuram</p>
+                            </div>
+                            <div class="event-text">
+                                <h3>Recruit and Train Volunteers</h3>
+                                <p>
+                                    Provide orientation sessions covering expectations, emergency procedures.
+                                </p>
+                                <a class="btn btn-custom" href="">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Event End -->
+
+
+    <!-- Team Start -->
+    <!-- <div class="team">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Meet Our Team</p>
+                <h2>Awesome guys behind our charity activities</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/team-1.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-text">
+                            <h2>Donald John</h2>
+                            <p>Founder & CEO</p>
+                            <div class="team-social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/team-2.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-text">
+                            <h2>Adam Phillips</h2>
+                            <p>Chef Executive</p>
+                            <div class="team-social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/team-3.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-text">
+                            <h2>Thomas Olsen</h2>
+                            <p>Chef Advisor</p>
+                            <div class="team-social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/team-4.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-text">
+                            <h2>James Alien</h2>
+                            <p>Advisor</p>
+                            <div class="team-social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Team End -->
+
+
+    <!-- Volunteer Start -->
+    <div class="volunteer" data-parallax="scroll">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="volunteer-form">
+                        <form>
+                            <div class="control-group">
+                                <input type="text" class="form-control" placeholder="Name *" required/>
+                            </div>
+                            <div class="control-group">
+                                <input type="email" class="form-control" placeholder="Email *" required/>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control" placeholder="Phone *" required/>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control" placeholder="Location *" required/>
+                            </div>
+                            <div class="control-group">
+                                <select name="" id="" class="form-control voulselect" required>
+                                    <option value="">Select</option>
+                                    <option value="Internship">Internship</option>
+                                    <option value="Volunteer">Volunteer</option>
+                                    <option value="CSR Collab">CSR Collab</option>
+                                    <option value="Educational Institution">Educational Institution</option>
+                                </select>
+                            </div>
+                            <!-- <div class="control-group">
+                                <textarea class="form-control" placeholder="Why you want to become a volunteer?"
+                                    required="required"></textarea>
+                            </div> -->
+                            <div>
+                                <button class="btn btn-custom" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="volunteer-content">
+                        <div class="section-header">
+                            <p>
+                                <!-- Become A  -->
+                                Volunteer or Internship</p>
+                            <h2>Let's make a difference in the lives of others</h2>
+                        </div>
+                        <div class="volunteer-text">
+                            <p>
+                                Our foundation has conducted more than 300+ job fairs in India. to reduce unemployment in
+                                India. Our motto is to support all categories of studies in India. Our foundation is
+                                Empanel, with more than 1000+ companies in India. Eligibility:<span> 12th degree,
+                                    engineering,
+                                    medical, pharmacy, ITI, diploma </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Volunteer End -->
+
+
+    <!-- Testimonial Start -->
+    <!-- <div class="testimonial">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Testimonial</p>
+                <h2>What people are talking about our charity activities</h2>
+            </div>
+            <div class="owl-carousel testimonials-carousel">
+                <div class="testimonial-item">
+                    <div class="testimonial-profile">
+                        <img src="img/testimonial-1.jpg" alt="Image">
+                        <div class="testimonial-name">
+                            <h3>Person Name</h3>
+                            <p>Profession</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare velit non vulputa. Aliqu
+                            metus tortor, auctor id gravid vivera quis
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-profile">
+                        <img src="img/testimonial-2.jpg" alt="Image">
+                        <div class="testimonial-name">
+                            <h3>Person Name</h3>
+                            <p>Profession</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare velit non vulputa. Aliqu
+                            metus tortor, auctor id gravid vivera quis
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-profile">
+                        <img src="img/testimonial-3.jpg" alt="Image">
+                        <div class="testimonial-name">
+                            <h3>Person Name</h3>
+                            <p>Profession</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare velit non vulputa. Aliqu
+                            metus tortor, auctor id gravid vivera quis
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-profile">
+                        <img src="img/testimonial-4.jpg" alt="Image">
+                        <div class="testimonial-name">
+                            <h3>Person Name</h3>
+                            <p>Profession</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare velit non vulputa. Aliqu
+                            metus tortor, auctor id gravid vivera quis
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Testimonial End -->
+
+
+    <!-- Contact Start -->
+    <!-- <div class="contact">
+        <div class="container">
+            <div class="section-headers text-center">
+                <p>Get In Touch</p>
+                <h2>Contact for any query</h2>
+            </div>
+            <div class="contact-img">
+                <img src="img/contact.jpg" alt="Image">
+            </div>
+            <div class="contact-form">
+                <div id="success"></div>
+                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                    <div class="control-group">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required"
+                            data-validation-required-message="Please enter your name" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required"
+                            data-validation-required-message="Please enter your email" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required"
+                            data-validation-required-message="Please enter a subject" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <textarea class="form-control" id="message" placeholder="Message" required="required"
+                            data-validation-required-message="Please enter your message"></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div>
+                        <button class="btn btn-custom" type="submit" id="sendMessageButton">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> -->
+    <!-- Contact End -->
+
+
+    <!-- Blog Start -->
+    <!-- <div class="blog">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Our Blog</p>
+                <h2>Latest news & articles directly from our blog</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="img/blog-1.jpg" alt="Image">
+                        </div>
+                        <div class="blog-text">
+                            <h3><a href="#">Lorem ipsum dolor sit</a></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte
+                                liqum metus tortor
+                            </p>
+                        </div>
+                        <div class="blog-meta">
+                            <p><i class="fa fa-user"></i><a href="">Admin</a></p>
+                            <p><i class="fa fa-comments"></i><a href="">15 Comments</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="img/blog-2.jpg" alt="Image">
+                        </div>
+                        <div class="blog-text">
+                            <h3><a href="#">Lorem ipsum dolor sit</a></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte
+                                liqum metus tortor
+                            </p>
+                        </div>
+                        <div class="blog-meta">
+                            <p><i class="fa fa-user"></i><a href="">Admin</a></p>
+                            <p><i class="fa fa-comments"></i><a href="">15 Comments</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="img/blog-3.jpg" alt="Image">
+                        </div>
+                        <div class="blog-text">
+                            <h3><a href="#">Lorem ipsum dolor sit</a></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte
+                                liqum metus tortor
+                            </p>
+                        </div>
+                        <div class="blog-meta">
+                            <p><i class="fa fa-user"></i><a href="">Admin</a></p>
+                            <p><i class="fa fa-comments"></i><a href="">15 Comments</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Blog End -->
+
+    <!-- MOE Start -->
+    <div class="logos">
+    <h2>Our Partners</h2>
+    <div class="logo_items">
+        <img src="{% static 'img/clogo1.png' %}" alt="">
+        <img src="{% static 'img/clogo2.png' %}" alt="">
+        <img src="{% static 'img/clogo3.png' %}" alt="">
+        <img src="{% static 'img/clogo4.png' %}" alt="">
+        <img src="{% static 'img/clogo5.png' %}" alt="">
+        <img src="{% static 'img/clogo10.jpg' %}" alt="">
+        <img src="{% static 'img/clogo6.jpg' %}" alt="">
+        <img src="{% static 'img/clogo7.gif' %}" alt="">
+        <img src="{% static 'img/clogo8.png' %}" alt="">
+        <img src="{% static 'img/clogo9.png' %}" alt="">
+    </div>
+    <div class="logo_items">
+        <img src="{% static 'img/clogo1.png' %}" alt="">
+        <img src="{% static 'img/clogo2.png' %}" alt="">
+        <img src="{% static 'img/clogo3.png' %}" alt="">
+        <img src="{% static 'img/clogo4.png' %}" alt="">
+        <img src="{% static 'img/clogo5.png' %}" alt="">
+        <img src="{% static 'img/clogo10.jpg' %}" alt="">
+        <img src="{% static 'img/clogo6.jpg' %}" alt="">
+        <img src="{% static 'img/clogo7.gif' %}" alt="">
+        <img src="{% static 'img/clogo8.png' %}" alt="">
+        <img src="{% static 'img/clogo9.png' %}" alt="">
+    </div>
+</div>
+
+    <!-- MOE End -->
+
+   <!-- Footer Start -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-bar footer-bar-1">
+                    <a href="{% url 'home' %}">
+                        <img src="{% static 'img/asgardia/ASGARDIA-(white-foundation-bg-remove-3.0).png' %}" alt="">
+                    </a>
+                    <p style="color: white;">The Asgardia Foundation Working closely with needy from remote parts of India and addressing their challenges helped Asgardia.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-link">
+                    <h2>Quick Links</h2>
+                    <a href="{% url 'home' %}">Home</a>
+                    <a href="{% url 'about' %}">About</a>
+                    <a href="{% url 'get_involved' %}">Involved</a>
+                    <a href="{% url 'event' %}">Events</a>
+                    <a href="{% url 'gallery' %}">Gallery</a>
+                    <a href="{% url 'contact' %}">Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-link">
+                    <h2>Popular Links</h2>
+                    <a href="{% url 'employement' %}">Employment</a>
+                    <a href="{% url 'women_empowerment' %}">Women Empowerment</a>
+                    <a href="{% url 'education' %}">Education</a>
+                    <a href="{% url 'health' %}">Health</a>
+                    <a href="{% url 'environment' %}">Environment</a>
+                    <a href="{% url 'daily_meals' %}">Daily Meals</a>
+                    <a href="{% url 'livelihood' %}">Livelihood</a>
+                    <a href="{% url 'csr_impact' %}">CSR Impact</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-contact">
+                    <h2>Contact</h2>
+                    <p><i class="fa fa-phone-alt"></i>
+                        <a href="tel:+91 8667511342" style="color: white;">+91 8667511342</a></p>
+                    <p><i class="fa fa-envelope"></i><a href="mailto:info@asgardiafoundation.org.in" style="color: white;">info@asgardiafoundation.org.in</a></p>
+                    <p><i class="fa fa-map-marker-alt"></i>No 62, Jeenis Road, Saidpet, Near Post Office, Chennai - 600015</p>
+                    <div class="footer-social">
+                        <a class="btn btn-custom" href="https://x.com/asgardiafounda3"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-custom" href="https://www.facebook.com/asgardiafoundation/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-custom" href="https://www.instagram.com/asgardia_foundation?igsh=MTZzMDZ6ODJnYmd3bw=="><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-custom" href="https://www.linkedin.com/in/asgardia-foundation-0b5a7921b?originalSubdomain=in"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container copyright">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; <a href="{% url 'home' %}"> ASGARDIA FOUNDATION</a>, All Right Reserved.</p>
+            </div>
+            <div class="col-md-6">
+                <p>Developed By <a href="https://shanthiitsolution.com/" style="color: #FBFBF9;">SIT</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Pre Loader -->
+    <div id="loader" class="show">
+        <div class="loader"></div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+<!-- Static file references -->
+<script src="{% static 'lib/easing/easing.min.js' %}"></script>
+<script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+<script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+<script src="{% static 'lib/parallax/parallax.min.js' %}"></script>
+
+
+<!-- Contact Javascript File -->
+<script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+<script src="{% static 'mail/contact.js' %}"></script>
+
+<!-- Template Javascript -->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>

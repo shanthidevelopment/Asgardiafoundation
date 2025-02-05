@@ -1,0 +1,322 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ASGARDIA FOUNDATION</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Asgardia Foundation" name="keywords">
+    <meta content="Asgardia Foundation" name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/asgardia/LOGO.webp' %}" type="image/gif" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="{% static 'lib/flaticon/font/flaticon.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar Start -->
+    <div class="top-bar d-none d-md-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="top-bar-left">
+                        <div class="text">
+                            <i class="fa fa-phone-alt"></i>
+                            <p><a href="tel:+91 8667511342" class="text-white">+91 8667511342</a></p>
+                        </div>
+                        <div class="text">
+                            <i class="fa fa-envelope"></i>
+                            <p><a href="mailto:info@asgardiafoundation.org.in" class="text-white">info@asgardiafoundation.org.in</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="top-bar-right">
+                        <div class="social">
+                            <a href="https://x.com/asgardiafounda3"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/asgardiafoundation/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com/in/asgardia-foundation-0b5a7921b?originalSubdomain=in"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/asgardia_foundation?igsh=MTZzMDZ6ODJnYmd3bw=="><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Bar End -->
+
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="{% url 'home' %}">
+                    <img src="{% static 'img/asgardia/LOGO.webp' %}" alt="logo"/>
+                    <p><span>Asgardia</span><br>Foundation</p>
+                </a>
+            </div>
+            <!-- logo end -->
+        </div>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+                <a href="{% url 'home' %}" class="nav-item nav-link active">Home</a>
+                <a href="{% url 'about' %}" class="nav-item nav-link">About</a>
+                <a href="{% url 'get_involved' %}" class="nav-item nav-link">Involved</a>
+                <a href="{% url 'event' %}" class="nav-item nav-link">Events</a>
+                <a href="{% url 'gallery' %}" class="nav-item nav-link">Gallery</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our work</a>
+                    <div class="dropdown-menu">
+                        <a href="{% url 'employement' %}" class="dropdown-item">Employment</a>
+                        <a href="{% url 'women_empowerment' %}" class="dropdown-item">Women Empowerment</a>
+                        <a href="{% url 'education' %}" class="dropdown-item">Education</a>
+                        <a href="{% url 'health' %}" class="dropdown-item">Health</a>
+                        <a href="{% url 'environment' %}" class="dropdown-item">Environment</a>
+                        <a href="{% url 'daily_meals' %}" class="dropdown-item">Daily Meals</a>
+                        <a href="{% url 'livelihood' %}" class="dropdown-item">Livelihood</a>
+                        <a href="{% url 'csr_impact' %}" class="dropdown-item">CSR Impact</a>
+                    </div>
+                </div>
+                <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="page-header empage">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Employement</h2>
+                </div>
+                <div class="col-12">
+                    <a href="{% url 'home' %}">Home</a>
+                    <a href="{% url 'employement' %}">Employement</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+<!-- Employement Start -->
+<div class="container">
+    <div class="volunteer volunteerr">
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <div class="volunteer-form">
+                    <form>
+                        <div class="control-group">
+                            <input type="text" class="form-control" placeholder="Name *" required="required" />
+                        </div>
+                        <div class="control-group">
+                            <input type="email" class="form-control" placeholder="Email *" required="required" />
+                        </div>
+                        <div class="control-group">
+                            <input type="tel" class="form-control" placeholder="Phone *" required="required" />
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control" placeholder="Qualification" required="required" />
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control" placeholder="Role *" required="required" />
+                        </div>
+                        <div class="control-group">
+                            <input type="file" class="form-control" placeholder="Role *" required="required" />
+                            <!-- <textarea class="form-control" placeholder="Why you want to become a volunteer?" required="required"></textarea> -->
+                        </div>
+                        <div>
+                            <button class="btn btn-custom" type="submit">Employement</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="volunteer-content">
+                    <div class="section-header">
+                        <p>Employement</p>
+                        <h2>Let's make a difference in the lives of others</h2>
+                    </div>
+                    <div class="volunteer-text">
+                        <p>Our foundation has conducted more than 300+ job fairs in India. to reduce unemployment in India. Our motto is to support all categories of studies in India. Our foundation is Empanel, with more than 1000+ companies in India. Eligibility: <span>12th degree</span>, <span>engineering</span>, <span>medical</span>, <span>pharmacy</span>, <span>ITI</span>, <span>diploma</span>, <span>media</span>, <span>law</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="educa4">
+    <h2 class="text-center w-100">Blogs</h2>
+    <div class="edublog">
+        <div class="edublog1">
+            <div class="ebimg">
+                <img src="{% static 'img/blogs/post1.jpeg' %}" alt="BANDHAN BANK In Association With Asgardia Foundation |Placement drive 2024">
+            </div>
+            <div class="ebpara">
+                <a href="https://asgardiafoundation.blogspot.com/2024/09/bandhan-bank-in-association-asgardia.html" target="_blank"><h3>BANDHAN BANK In Association With Asgardia Foundation |Placement drive 2024</h3></a>
+            </div>
+        </div>
+        <div class="edublog1">
+            <div class="ebimg">
+                <img src="{% static 'img/gallary/img 68.jpeg' %}" alt="TN APEX SKILL DEVELOPMENT |RAJESWARI VEDACHLAM ARTS & SCIENCE COLLEGE |ASGARDIA FOUNDATION |MEGA JOB FAIR 2023|CHEGALPATTU">
+            </div>
+            <div class="ebpara">
+                <a href="https://asgardiafoundation.blogspot.com/2023/09/tn-apex-skill-development-rajeswari.html" target="_blank"><h3>TN APEX SKILL DEVELOPMENT |RAJESWARI VEDACHLAM ARTS & SCIENCE COLLEGE |ASGARDIA FOUNDATION |MEGA JOB FAIR 2023|CHEGALPATTU</h3></a>
+            </div>
+        </div>
+        <div class="edublog1">
+            <div class="ebimg">
+                <img src="{% static 'img/blogs/post11.jpeg' %}" alt="TN APEX SKILL DEVELOPMENT CENTER 2023 |ASGARDIA FOUNDATION |H H RAJAS COLLEGE OF ARTS & SCIENCE |PUDHUKOTTAI\MEGA JOB FAIR">
+            </div>
+            <div class="ebpara">
+                <a href="https://asgardiafoundation.blogspot.com/2023/09/tn-apex-skill-development-center-2023.html" target="_blank"><h3>TN APEX SKILL DEVELOPMENT CENTER 2023 |ASGARDIA FOUNDATION |H H RAJAS COLLEGE OF ARTS & SCIENCE |PUDHUKOTTAI\MEGA JOB FAIR</h3></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Employement End -->
+
+
+<!-- MOE Start -->
+<div class="logos">
+    <h2>Our Partners</h2>
+    <div class="logo_items">
+        <img src="{% static 'img/clogo1.png' %}" alt="Partner Logo 1">
+        <img src="{% static 'img/clogo2.png' %}" alt="Partner Logo 2">
+        <img src="{% static 'img/clogo3.png' %}" alt="Partner Logo 3">
+        <img src="{% static 'img/clogo4.png' %}" alt="Partner Logo 4">
+        <img src="{% static 'img/clogo5.png' %}" alt="Partner Logo 5">
+        <img src="{% static 'img/clogo10.jpg' %}" alt="Partner Logo 10">
+        <img src="{% static 'img/clogo6.jpg' %}" alt="Partner Logo 6">
+        <img src="{% static 'img/clogo7.gif' %}" alt="Partner Logo 7">
+        <img src="{% static 'img/clogo8.png' %}" alt="Partner Logo 8">
+        <img src="{% static 'img/clogo9.png' %}" alt="Partner Logo 9">
+    </div>
+    <div class="logo_items">
+        <img src="{% static 'img/clogo1.png' %}" alt="Partner Logo 1">
+        <img src="{% static 'img/clogo2.png' %}" alt="Partner Logo 2">
+        <img src="{% static 'img/clogo3.png' %}" alt="Partner Logo 3">
+        <img src="{% static 'img/clogo4.png' %}" alt="Partner Logo 4">
+        <img src="{% static 'img/clogo5.png' %}" alt="Partner Logo 5">
+        <img src="{% static 'img/clogo10.jpg' %}" alt="Partner Logo 10">
+        <img src="{% static 'img/clogo6.jpg' %}" alt="Partner Logo 6">
+        <img src="{% static 'img/clogo7.gif' %}" alt="Partner Logo 7">
+        <img src="{% static 'img/clogo8.png' %}" alt="Partner Logo 8">
+        <img src="{% static 'img/clogo9.png' %}" alt="Partner Logo 9">
+    </div>
+</div>
+<!-- MOE End -->
+
+     
+    <!-- Footer Start -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-bar footer-bar-1">
+                    <a href="{% url 'home' %}">
+                        <img src="{% static 'img/asgardia/ASGARDIA-(white-foundation-bg-remove-3.0).png' %}" alt="">
+                    </a>
+                    <p style="color: white;">The Asgardia Foundation Working closely with needy from remote parts of India and addressing their challenges helped Asgardia.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-link">
+                    <h2>Quick Links</h2>
+                    <a href="{% url 'home' %}">Home</a>
+                    <a href="{% url 'about' %}">About</a>
+                    <a href="{% url 'get_involved' %}">Involved</a>
+                    <a href="{% url 'event' %}">Events</a>
+                    <a href="{% url 'gallery' %}">Gallery</a>
+                    <a href="{% url 'contact' %}">Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-link">
+                    <h2>Popular Links</h2>
+                    <a href="{% url 'employement' %}">Employment</a>
+                    <a href="{% url 'women_empowerment' %}">Women Empowerment</a>
+                    <a href="{% url 'education' %}">Education</a>
+                    <a href="{% url 'health' %}">Health</a>
+                    <a href="{% url 'environment' %}">Environment</a>
+                    <a href="{% url 'daily_meals' %}">Daily Meals</a>
+                    <a href="{% url 'livelihood' %}">Livelihood</a>
+                    <a href="{% url 'csr_impact' %}">CSR Impact</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-contact">
+                    <h2>Contact</h2>
+                    <p><i class="fa fa-phone-alt"></i>
+                        <a href="tel:+91 8667511342" style="color: white;">+91 8667511342</a></p>
+                    <p><i class="fa fa-envelope"></i><a href="mailto:info@asgardiafoundation.org.in" style="color: white;">info@asgardiafoundation.org.in</a></p>
+                    <p><i class="fa fa-map-marker-alt"></i>No 62, Jeenis Road, Saidpet, Near Post Office, Chennai - 600015</p>
+                    <div class="footer-social">
+                        <a class="btn btn-custom" href="https://x.com/asgardiafounda3"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-custom" href="https://www.facebook.com/asgardiafoundation/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-custom" href="https://www.instagram.com/asgardia_foundation?igsh=MTZzMDZ6ODJnYmd3bw=="><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-custom" href="https://www.linkedin.com/in/asgardia-foundation-0b5a7921b?originalSubdomain=in"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container copyright">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; <a href="{% url 'home' %}"> ASGARDIA FOUNDATION</a>, All Right Reserved.</p>
+            </div>
+            <div class="col-md-6">
+                <p>Developed By <a href="https://shanthiitsolution.com/" style="color: #FBFBF9;">SIT</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+   <!-- Back to top button -->
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- Pre Loader -->
+<div id="loader" class="show">
+    <div class="loader"></div>
+</div>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="{% static 'lib/easing/easing.min.js' %}"></script>
+<script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+<script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+<script src="{% static 'lib/parallax/parallax.min.js' %}"></script>
+
+<!-- Contact Javascript File -->
+<script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+<script src="{% static 'mail/contact.js' %}"></script>
+
+<!-- Template Javascript -->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>

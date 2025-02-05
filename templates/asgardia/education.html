@@ -1,0 +1,324 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ASGARDIA FOUNDATION</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Asgardia Foundation" name="keywords">
+    <meta content="Asgardia Foundation" name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/asgardia/LOGO.webp' %}" type="image/gif" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="{% static 'lib/flaticon/font/flaticon.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Bar Start -->
+    <div class="top-bar d-none d-md-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="top-bar-left">
+                        <div class="text">
+                            <i class="fa fa-phone-alt"></i>
+                            <p><a href="tel:+91 8667511342" class="text-white">+91 8667511342</a></p>
+                        </div>
+                        <div class="text">
+                            <i class="fa fa-envelope"></i>
+                            <p><a href="mailto:info@asgardiafoundation.org.in" class="text-white">info@asgardiafoundation.org.in</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="top-bar-right">
+                        <div class="social">
+                            <a href="https://x.com/asgardiafounda3"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/asgardiafoundation/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com/in/asgardia-foundation-0b5a7921b?originalSubdomain=in"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/asgardia_foundation?igsh=MTZzMDZ6ODJnYmd3bw=="><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Bar End -->
+
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="{% url 'home' %}">
+                    <img src="{% static 'img/asgardia/LOGO.webp' %}" alt="logo"/>
+                    <p><span>Asgardia</span><br>Foundation</p>
+                </a>
+            </div>
+            <!-- logo end -->
+        </div>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+                <a href="{% url 'home' %}" class="nav-item nav-link active">Home</a>
+                <a href="{% url 'about' %}" class="nav-item nav-link">About</a>
+                <a href="{% url 'get_involved' %}" class="nav-item nav-link">Involved</a>
+                <a href="{% url 'event' %}" class="nav-item nav-link">Events</a>
+                <a href="{% url 'gallery' %}" class="nav-item nav-link">Gallery</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our work</a>
+                    <div class="dropdown-menu">
+                        <a href="{% url 'employement' %}" class="dropdown-item">Employment</a>
+                        <a href="{% url 'women_empowerment' %}" class="dropdown-item">Women Empowerment</a>
+                        <a href="{% url 'education' %}" class="dropdown-item">Education</a>
+                        <a href="{% url 'health' %}" class="dropdown-item">Health</a>
+                        <a href="{% url 'environment' %}" class="dropdown-item">Environment</a>
+                        <a href="{% url 'daily_meals' %}" class="dropdown-item">Daily Meals</a>
+                        <a href="{% url 'livelihood' %}" class="dropdown-item">Livelihood</a>
+                        <a href="{% url 'csr_impact' %}" class="dropdown-item">CSR Impact</a>
+                    </div>
+                </div>
+                <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+
+
+
+    <!-- Page Header Start -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Education</h2>
+                </div>
+                <div class="col-12">
+                    <a href="{% url 'home' %}">Home</a>
+                    <a href="{% url 'education' %}">Education</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Education Start-->
+
+    <section class="education">
+        <div class="educ">
+            <h1>Asgardia's Education Mission</h1>
+        </div>
+        <div class="educ2">
+            <div class="educ-r">
+                <img src="{% static "img/asgardia/education.jpg" %}" title="Education" alt="">
+            </div>
+            <div class="educ-l">
+                <p>At Asgardia, we believe that education is the key to unlocking the potential within every child, regardless of their economic background. Our foundation is dedicated to providing quality education to children from low-income families, ensuring they have the same opportunities for growth and success as anyone else. We offer a supportive and nurturing environment where students can thrive academically, develop essential life skills, and gain the confidence needed to pursue their dreams. Our programs focus on building a strong foundation in core subjects while encouraging creativity, critical thinking, and curiosity.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="educa2">
+        <div class="educa2div">
+            <p>Education is the cornerstone of personal and societal development. It empowers individuals to break the cycle of poverty, opens doors to better job opportunities, and fosters innovation and progress. For children from underprivileged backgrounds, education is a transformative tool that can change the course of their lives. It not only enhances their knowledge and skills but also builds self-confidence, promotes social inclusion, and enables them to contribute positively to their communities. At Asgardia, we are committed to making quality education accessible to all, because we believe that every child deserves the chance to succeed and shape their own future.</p>
+        </div>
+        <div class="educa2div">
+            <p>Education is not just a pathway to personal success; it is the foundation of a strong, equitable society. For children from marginalized communities, education can be the stepping stone that leads them out of poverty and towards a future filled with opportunities. It equips them with the knowledge and skills necessary to break free from economic constraints, empowering them to pursue careers, support their families, and contribute to the growth of their communities.</p>
+        </div>
+        <div class="educa2div">
+            <p>Beyond economic advantages, education nurtures critical thinking, creativity, and problem-solving skills. It fosters curiosity and encourages children to question the world around them, sparking a lifelong love for learning. Educated individuals are more likely to make informed decisions, participate in civic activities, and promote peace and understanding in society. Education also plays a crucial role in fostering gender equality, reducing inequalities, and promoting social justice.</p>
+        </div>
+        <div class="educa2div">
+            <p>At Asgardia, we believe that education is a basic human right and that every child, regardless of their background, deserves access to high-quality learning. By investing in the education of these children today, we are contributing to a brighter, more equitable future for all. Through our efforts, we aim to build a generation of empowered, knowledgeable, and compassionate individuals who will shape a better world tomorrow.</p>
+        </div>
+    </section>
+
+    <section class="educa3">
+        <h2>What We Do</h2>
+        <p>Asgardia's primary initiative, the Education for All program, is dedicated to empowering underprivileged children by providing them with access to education, nutritional support, and overall well-being. Education for All caters to children aged 3-18 who face challenging circumstances, including those from low-income families, children with disabilities, those affected by disasters, abandoned or street children, and those living in remote tribal regions and hard-to-reach areas.</p>
+    </section>
+
+    <section class="educa2 educa2-part2">
+        <div class="educa2div">
+            <p>Through education, Asgardia aims to break the cycle of poverty that many families. We believe that providing education to even one child can have a ripple effect, benefiting not only that individual but also their family and community. By ensuring that children from the lowest income levels are given the tools to succeed, we are helping to build a future where these children can rise above their circumstances and contribute to the growth and development of their communities.</p>
+        </div>
+        <div class="educa2div">
+            <p>Asgardia Foundation understands that education is the most powerful tool for social change. Through our focused efforts at the grassroots level, we are helping to create a brighter, more equitable future for every child we serve.</p>
+        </div>
+    </section>
+
+    <section class="educa4">
+        <h2 class="text-center w-100">Blogs</h2>
+        <div class="edublog">
+            <div class="edublog1">
+                <div class="ebimg">
+                    <img src="{% static "img/asgardia/education.jpg" %}" alt="RAJESWARI VEDACHALAM GOVERMENT ARTS SCIENCE COLLEGE|CHEGALPATTU |ASGARDIA FOUNDATION|TN APEX SKILL DEVELOPMENT">
+                </div>
+                <div class="ebpara">
+                    <a href="https://asgardiafoundation.blogspot.com/2023/10/rajeswari-vedachalam-goverment-arts.html" target="_blank"><h3>RAJESWARI VEDACHALAM GOVERMENT ARTS SCIENCE COLLEGE|CHEGALPATTU |ASGARDIA FOUNDATION|TN APEX SKILL DEVELOPMENT</h3></a>
+                </div>
+            </div>
+            <div class="edublog1">
+                <div class="ebimg">
+                    <img src="{% static "img/blogs/post9.JPG" %}" alt="ASGARDIA FOUNDATION |MR GOVERMENT ARTS & SCIENCE COLLEGE | TN APEX SKILL DEVELOPMENT |2023">
+                </div>
+                <div class="ebpara">
+                    <a href="https://asgardiafoundation.blogspot.com/2023/09/asgardia-foundation-mr-goverment-arts.html" target="_blank"><h3>ASGARDIA FOUNDATION |MR GOVERMENT ARTS & SCIENCE COLLEGE | TN APEX SKILL DEVELOPMENT |2023</h3></a>
+                </div>
+            </div>
+            <div class="edublog1">
+                <div class="ebimg">
+                    <img src="{% static "img/blogs/post11.jpeg" %}" alt="MOTHER THERSA WOMENS UNIVERSITY INTERSNHIP |2023|CHENNAI">
+                </div>
+                <div class="ebpara">
+                    <a href="https://asgardiafoundation.blogspot.com/2023/08/mother-thersa-womens-university.html" target="_blank"><h3>MOTHER THERSA WOMENS UNIVERSITY INTERSNHIP |2023|CHENNAI</h3></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education End-->
+
+<!-- MOE Start -->
+<div class="logos">
+    <h2>Our Partners</h2>
+    <div class="logo_items">
+        <img src="{% static 'img/clogo1.png' %}" alt="">
+        <img src="{% static 'img/clogo2.png' %}" alt="">
+        <img src="{% static 'img/clogo3.png' %}" alt="">
+        <img src="{% static 'img/clogo4.png' %}" alt="">
+        <img src="{% static 'img/clogo5.png' %}" alt="">
+        <img src="{% static 'img/clogo10.jpg' %}" alt="">
+        <img src="{% static 'img/clogo6.jpg' %}" alt="">
+        <img src="{% static 'img/clogo7.gif' %}" alt="">
+        <img src="{% static 'img/clogo8.png' %}" alt="">
+        <img src="{% static 'img/clogo9.png' %}" alt="">
+    </div>
+    <div class="logo_items">
+        <img src="{% static 'img/clogo1.png' %}" alt="">
+        <img src="{% static 'img/clogo2.png' %}" alt="">
+        <img src="{% static 'img/clogo3.png' %}" alt="">
+        <img src="{% static 'img/clogo4.png' %}" alt="">
+        <img src="{% static 'img/clogo5.png' %}" alt="">
+        <img src="{% static 'img/clogo10.jpg' %}" alt="">
+        <img src="{% static 'img/clogo6.jpg' %}" alt="">
+        <img src="{% static 'img/clogo7.gif' %}" alt="">
+        <img src="{% static 'img/clogo8.png' %}" alt="">
+        <img src="{% static 'img/clogo9.png' %}" alt="">
+    </div>
+</div>
+<!-- MOE End -->
+
+
+
+<!-- Footer Start -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-bar footer-bar-1">
+                    <a href="{% url 'home' %}">
+                        <img src="{% static 'img/asgardia/ASGARDIA-(white-foundation-bg-remove-3.0).png' %}" alt="">
+                    </a>
+                    <p style="color: white;">The Asgardia Foundation Working closely with needy from remote parts of India and addressing their challenges helped Asgardia.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-link">
+                    <h2>Quick Links</h2>
+                    <a href="{% url 'home' %}">Home</a>
+                    <a href="{% url 'about' %}">About</a>
+                    <a href="{% url 'get_involved' %}">Involved</a>
+                    <a href="{% url 'event' %}">Events</a>
+                    <a href="{% url 'gallery' %}">Gallery</a>
+                    <a href="{% url 'contact' %}">Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-link">
+                    <h2>Popular Links</h2>
+                    <a href="{% url 'employement' %}">Employment</a>
+                    <a href="{% url 'women_empowerment' %}">Women Empowerment</a>
+                    <a href="{% url 'education' %}">Education</a>
+                    <a href="{% url 'health' %}">Health</a>
+                    <a href="{% url 'environment' %}">Environment</a>
+                    <a href="{% url 'daily_meals' %}">Daily Meals</a>
+                    <a href="{% url 'livelihood' %}">Livelihood</a>
+                    <a href="{% url 'csr_impact' %}">CSR Impact</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-contact">
+                    <h2>Contact</h2>
+                    <p><i class="fa fa-phone-alt"></i>
+                        <a href="tel:+91 8667511342" style="color: white;">+91 8667511342</a></p>
+                    <p><i class="fa fa-envelope"></i><a href="mailto:info@asgardiafoundation.org.in" style="color: white;">info@asgardiafoundation.org.in</a></p>
+                    <p><i class="fa fa-map-marker-alt"></i>No 62, Jeenis Road, Saidpet, Near Post Office, Chennai - 600015</p>
+                    <div class="footer-social">
+                        <a class="btn btn-custom" href="https://x.com/asgardiafounda3"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-custom" href="https://www.facebook.com/asgardiafoundation/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-custom" href="https://www.instagram.com/asgardia_foundation?igsh=MTZzMDZ6ODJnYmd3bw=="><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-custom" href="https://www.linkedin.com/in/asgardia-foundation-0b5a7921b?originalSubdomain=in"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container copyright">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; <a href="{% url 'home' %}"> ASGARDIA FOUNDATION</a>, All Right Reserved.</p>
+            </div>
+            <div class="col-md-6">
+                <p>Developed By <a href="https://shanthiitsolution.com/" style="color: #FBFBF9;">SIT</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+  <!-- Back to top button -->
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- Pre Loader -->
+<div id="loader" class="show">
+    <div class="loader"></div>
+</div>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="{% static 'lib/easing/easing.min.js' %}"></script>
+<script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+<script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+<script src="{% static 'lib/parallax/parallax.min.js' %}"></script>
+
+<!-- Contact Javascript File -->
+<script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+<script src="{% static 'mail/contact.js' %}"></script>
+
+<!-- Template Javascript -->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>

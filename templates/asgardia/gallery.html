@@ -1,0 +1,479 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ASGARDIA FOUNDATION</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Asgardia Foundation" name="keywords">
+    <meta content="Asgardia Foundation" name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/asgardia/LOGO.webp' %}" type="image/gif" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="{% static 'lib/flaticon/font/flaticon.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar Start -->
+    <div class="top-bar d-none d-md-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="top-bar-left">
+                        <div class="text">
+                            <i class="fa fa-phone-alt"></i>
+                            <p><a href="tel:+91 8667511342" class="text-white">+91 8667511342</a></p>
+                        </div>
+                        <div class="text">
+                            <i class="fa fa-envelope"></i>
+                            <p><a href="mailto:info@asgardiafoundation.org.in" class="text-white">info@asgardiafoundation.org.in</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="top-bar-right">
+                        <div class="social">
+                            <a href="https://x.com/asgardiafounda3"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/asgardiafoundation/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com/in/asgardia-foundation-0b5a7921b?originalSubdomain=in"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/asgardia_foundation?igsh=MTZzMDZ6ODJnYmd3bw=="><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Bar End -->
+
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="{% url 'home' %}">
+                    <img src="{% static 'img/asgardia/LOGO.webp' %}" alt="logo"/>
+                    <p><span>Asgardia</span><br>Foundation</p>
+                </a>
+            </div>
+            <!-- logo end -->
+        </div>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+                <a href="{% url 'home' %}" class="nav-item nav-link active">Home</a>
+                <a href="{% url 'about' %}" class="nav-item nav-link">About</a>
+                <a href="{% url 'get_involved' %}" class="nav-item nav-link">Involved</a>
+                <a href="{% url 'event' %}" class="nav-item nav-link">Events</a>
+                <a href="{% url 'gallery' %}" class="nav-item nav-link">Gallery</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our work</a>
+                    <div class="dropdown-menu">
+                        <a href="{% url 'employement' %}" class="dropdown-item">Employment</a>
+                        <a href="{% url 'women_empowerment' %}" class="dropdown-item">Women Empowerment</a>
+                        <a href="{% url 'education' %}" class="dropdown-item">Education</a>
+                        <a href="{% url 'health' %}" class="dropdown-item">Health</a>
+                        <a href="{% url 'environment' %}" class="dropdown-item">Environment</a>
+                        <a href="{% url 'daily_meals' %}" class="dropdown-item">Daily Meals</a>
+                        <a href="{% url 'livelihood' %}" class="dropdown-item">Livelihood</a>
+                        <a href="{% url 'csr_impact' %}" class="dropdown-item">CSR Impact</a>
+                    </div>
+                </div>
+                <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Gallery</h2>
+                </div>
+                <div class="col-12">
+                    <a href="{% url 'home' %}">Home</a>
+                    <a href="{% url 'gallery' %}">Gallery</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+   <!-- gallary start -->
+<div class="container-1">
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 1.jpg" alt="Gallery Image 1" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 2.jpg" alt="Gallery Image 2" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 3.jpg" alt="Gallery Image 3" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 5.jpg" alt="Gallery Image 4" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 4.jpeg" alt="Gallery Image 5" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 6.jpg" alt="Gallery Image 6" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 7.jpg" alt="Gallery Image 7" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 8.jpg" alt="Gallery Image 8" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 9.jpeg" alt="Gallery Image 9" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 10.jpeg" alt="Gallery Image 10" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 11.jpeg" alt="Gallery Image 11" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 12.jpeg" alt="Gallery Image 12" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 13.jpeg" alt="Gallery Image 13" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 14.jpg" alt="Gallery Image 14" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 15.jpg" alt="Gallery Image 15" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img16.jpg" alt="Gallery Image 16" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 17.jpeg" alt="Gallery Image 17" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 18.jpeg" alt="Gallery Image 18" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 19.jpg" alt="Gallery Image 19" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 20.jpeg" alt="Gallery Image 20" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 21.jpg" alt="Gallery Image 21" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 22.jpeg" alt="Gallery Image 22" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 23.jpeg" alt="Gallery Image 23" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 24.jpeg" alt="Gallery Image 24" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 25.JPG" alt="Gallery Image 25" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 26.JPG" alt="Gallery Image 26" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 27.JPG" alt="Gallery Image 27" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 28.jpeg" alt="Gallery Image 28" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 29.jpeg" alt="Gallery Image 29" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 30.jpeg" alt="Gallery Image 30" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 31.jpeg" alt="Gallery Image 31" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 32.jpg" alt="Gallery Image 32" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 33.jpg" alt="Gallery Image 33" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 34.jpeg" alt="Gallery Image 34" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 35.jpeg" alt="Gallery Image 35" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 36.jpeg" alt="Gallery Image 36" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 37.jpeg" alt="Gallery Image 37" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 38.jpeg" alt="Gallery Image 38" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 39.jpeg" alt="Gallery Image 39" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 41.jpg" alt="Gallery Image 41" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 42.jpg" alt="Gallery Image 42" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 44.jpg" alt="Gallery Image 44" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 45.jpg" alt="Gallery Image 45" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 46.jpg" alt="Gallery Image 46" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 47.jpg" alt="Gallery Image 47" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 48.jpg" alt="Gallery Image 48" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 50.jpg" alt="Gallery Image 50" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 51.jpg" alt="Gallery Image 51" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 53.jpg" alt="Gallery Image 53" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 54.jpg" alt="Gallery Image 54" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 55.jpg" alt="Gallery Image 55" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 56.jpg" alt="Gallery Image 56" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 58.jpeg" alt="Gallery Image 58" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 59.jpg" alt="Gallery Image 59" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 60.jpeg" alt="Gallery Image 60" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 61.jpeg" alt="Gallery Image 61" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 62.jpeg" alt="Gallery Image 62" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 63.jpeg" alt="Gallery Image 63" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 64.jpeg" alt="Gallery Image 64" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 65.jpg" alt="Gallery Image 65" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 66.JPG" alt="Gallery Image 66" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 67.jpeg" alt="Gallery Image 67" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 68.jpeg" alt="Gallery Image 68" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 69.JPG" alt="Gallery Image 69" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img 71.jpg" alt="Gallery Image 71" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img72.jpeg" alt="Gallery Image 72" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img73.jpg" alt="Gallery Image 73" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img74.jpg" alt="Gallery Image 74" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img75.jpg" alt="Gallery Image 75" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img76.jpg" alt="Gallery Image 76" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img77.jpg" alt="Gallery Image 77" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img83.jpg" alt="Gallery Image 83" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img79.jpg" alt="Gallery Image 79" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="/static/img/gallary/img80.jpg" alt="Gallery Image 80" onclick="openLightbox(this)">
+        </div>
+    </div>
+</div>
+<!-- gallary end -->
+
+
+    <!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-image">
+</div>
+
+<!-- MOE Start -->
+<div class="logos">
+    <h2>Our Partners</h2>
+    <div class="logo_items">
+        <img src="/static/img/clogo1.png" alt="Partner 1">
+        <img src="/static/img/clogo2.png" alt="Partner 2">
+        <img src="/static/img/clogo3.png" alt="Partner 3">
+        <img src="/static/img/clogo4.png" alt="Partner 4">
+        <img src="/static/img/clogo5.png" alt="Partner 5">
+        <img src="/static/img/clogo10.jpg" alt="Partner 6">
+        <img src="/static/img/clogo6.jpg" alt="Partner 7">
+        <img src="/static/img/clogo7.gif" alt="Partner 8">
+        <img src="/static/img/clogo8.png" alt="Partner 9">
+        <img src="/static/img/clogo9.png" alt="Partner 10">
+    </div>
+    <div class="logo_items">
+        <img src="/static/img/clogo1.png" alt="Partner 1">
+        <img src="/static/img/clogo2.png" alt="Partner 2">
+        <img src="/static/img/clogo3.png" alt="Partner 3">
+        <img src="/static/img/clogo4.png" alt="Partner 4">
+        <img src="/static/img/clogo5.png" alt="Partner 5">
+        <img src="/static/img/clogo10.jpg" alt="Partner 6">
+        <img src="/static/img/clogo6.jpg" alt="Partner 7">
+        <img src="/static/img/clogo7.gif" alt="Partner 8">
+        <img src="/static/img/clogo8.png" alt="Partner 9">
+        <img src="/static/img/clogo9.png" alt="Partner 10">
+    </div>
+</div>
+<!-- MOE End -->
+
+
+<!-- Footer Start -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-bar footer-bar-1">
+                    <a href="{% url 'home' %}">
+                        <img src="{% static 'img/asgardia/ASGARDIA-(white-foundation-bg-remove-3.0).png' %}" alt="">
+                    </a>
+                    <p style="color: white;">The Asgardia Foundation Working closely with needy from remote parts of India and addressing their challenges helped Asgardia.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-link">
+                    <h2>Quick Links</h2>
+                    <a href="{% url 'home' %}">Home</a>
+                    <a href="{% url 'about' %}">About</a>
+                    <a href="{% url 'get_involved' %}">Involved</a>
+                    <a href="{% url 'event' %}">Events</a>
+                    <a href="{% url 'gallery' %}">Gallery</a>
+                    <a href="{% url 'contact' %}">Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-link">
+                    <h2>Popular Links</h2>
+                    <a href="{% url 'employement' %}">Employment</a>
+                    <a href="{% url 'women_empowerment' %}">Women Empowerment</a>
+                    <a href="{% url 'education' %}">Education</a>
+                    <a href="{% url 'health' %}">Health</a>
+                    <a href="{% url 'environment' %}">Environment</a>
+                    <a href="{% url 'daily_meals' %}">Daily Meals</a>
+                    <a href="{% url 'livelihood' %}">Livelihood</a>
+                    <a href="{% url 'csr_impact' %}">CSR Impact</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-contact">
+                    <h2>Contact</h2>
+                    <p><i class="fa fa-phone-alt"></i>
+                        <a href="tel:+91 8667511342" style="color: white;">+91 8667511342</a></p>
+                    <p><i class="fa fa-envelope"></i><a href="mailto:info@asgardiafoundation.org.in" style="color: white;">info@asgardiafoundation.org.in</a></p>
+                    <p><i class="fa fa-map-marker-alt"></i>No 62, Jeenis Road, Saidpet, Near Post Office, Chennai - 600015</p>
+                    <div class="footer-social">
+                        <a class="btn btn-custom" href="https://x.com/asgardiafounda3"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-custom" href="https://www.facebook.com/asgardiafoundation/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-custom" href="https://www.instagram.com/asgardia_foundation?igsh=MTZzMDZ6ODJnYmd3bw=="><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-custom" href="https://www.linkedin.com/in/asgardia-foundation-0b5a7921b?originalSubdomain=in"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container copyright">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; <a href="{% url 'home' %}"> ASGARDIA FOUNDATION</a>, All Right Reserved.</p>
+            </div>
+            <div class="col-md-6">
+                <p>Developed By <a href="https://shanthiitsolution.com/" style="color: #FBFBF9;">SIT</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+   <!-- Back to top button -->
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- Pre Loader -->
+<div id="loader" class="show">
+    <div class="loader"></div>
+</div>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="{% static 'lib/easing/easing.min.js' %}"></script>
+<script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+<script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+<script src="{% static 'lib/parallax/parallax.min.js' %}"></script>
+
+<!-- Contact Javascript File -->
+<script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+<script src="{% static 'mail/contact.js' %}"></script>
+
+<!-- Template Javascript -->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>

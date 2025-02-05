@@ -1,0 +1,293 @@
+{% load static %}  
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ASGARDIA FOUNDATION</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Asgardia Foundation" name="keywords">
+    <meta content="Asgardia Foundation" name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/asgardia/LOGO.webp' %}" type="image/gif" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="{% static 'lib/flaticon/font/flaticon.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Bar Start -->
+    <div class="top-bar d-none d-md-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="top-bar-left">
+                        <div class="text">
+                            <i class="fa fa-phone-alt"></i>
+                            <p><a href="tel:+91 8667511342" class="text-white">+91 8667511342</a></p>
+                        </div>
+                        <div class="text">
+                            <i class="fa fa-envelope"></i>
+                            <p><a href="mailto:info@asgardiafoundation.org.in" class="text-white">info@asgardiafoundation.org.in</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="top-bar-right">
+                        <div class="social">
+                            <a href="https://x.com/asgardiafounda3"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/asgardiafoundation/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com/in/asgardia-foundation-0b5a7921b?originalSubdomain=in"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/asgardia_foundation?igsh=MTZzMDZ6ODJnYmd3bw=="><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Bar End -->
+
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="{% url 'home' %}">
+                    <img src="{% static 'img/asgardia/LOGO.webp' %}" alt="logo"/>
+                    <p><span>Asgardia</span><br>Foundation</p>
+                </a>
+            </div>
+            <!-- logo end -->
+        </div>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+                <a href="{% url 'home' %}" class="nav-item nav-link active">Home</a>
+                <a href="{% url 'about' %}" class="nav-item nav-link">About</a>
+                <a href="{% url 'get_involved' %}" class="nav-item nav-link">Involved</a>
+                <a href="{% url 'event' %}" class="nav-item nav-link">Events</a>
+                <a href="{% url 'gallery' %}" class="nav-item nav-link">Gallery</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our work</a>
+                    <div class="dropdown-menu">
+                        <a href="{% url 'employement' %}" class="dropdown-item">Employment</a>
+                        <a href="{% url 'women_empowerment' %}" class="dropdown-item">Women Empowerment</a>
+                        <a href="{% url 'education' %}" class="dropdown-item">Education</a>
+                        <a href="{% url 'health' %}" class="dropdown-item">Health</a>
+                        <a href="{% url 'environment' %}" class="dropdown-item">Environment</a>
+                        <a href="{% url 'daily_meals' %}" class="dropdown-item">Daily Meals</a>
+                        <a href="{% url 'livelihood' %}" class="dropdown-item">Livelihood</a>
+                        <a href="{% url 'csr_impact' %}" class="dropdown-item">CSR Impact</a>
+                    </div>
+                </div>
+                <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Livelihood</h2>
+                </div>
+                <div class="col-12">
+                    <a href="{% url 'home' %}">Home</a>
+                    <a href="{% url 'livelihood' %}">Livelihood</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Livelihood Start -->
+     <section class="live">
+        <h1>Livelihood</h1>
+        <p>India's youth make up over a third of the nation's population, forming a significant portion of its labor force. With such a large young demographic, the country has the potential to capitalize on its demographic dividend—provided that these young individuals are equipped with the right skills and employability. For sustainable economic growth and effective nation-building, it is essential to harness the potential of underprivileged youth by guiding their energy and talent in the right direction.</p>
+        <div class="dailyimg liveimg">
+            <img src="{% static "img/gallary/img 19.jpeg" %}" alt="">
+            <img src="{% static "img/images/M1.webp" %}" alt="">
+            <img src="{% static "img/gallary/img 21.jpg" %}" alt="">
+            <img src="{% static "img/gallary/d9.jpg" %}" alt="">
+        </div>
+
+        <p>The Asgardia Foundation is committed to building sustainable livelihood opportunities for communities in need while ensuring their overall well-being through accessible healthcare programs. By focusing on skills development, employment support, and community health, the foundation aims to help individuals and families achieve financial stability, self-reliance, and a healthier lifestyle.</p>
+        <p><b>Key Livelihood Programs:</b></p>
+        <dl>
+            <div class="dlt">
+                <dt>Skills Development & Training:</dt>
+                <dd>Conducts vocational training programs tailored to the needs of the community, including workshops on tailoring, handicrafts, and digital skills.</dd>
+                <dd>Offers soft skills training such as communication, teamwork, and problem-solving, enhancing employability.</dd>
+            </div>
+
+            <div class="dlt">
+                <dt>Job Placement Assistance:</dt>
+                <dd>Collaborates with local businesses and organizations to connect individuals with suitable job opportunities.</dd>
+                <dd>Provides career counseling and resume-building workshops to prepare individuals for job interviews and placements.</dd>
+            </div>
+
+            <div class="dlt">
+                <dt>Community Health Camps:</dt>
+                <dd>Organizes health camps focusing on preventive care for children, women, and the elderly.</dd>
+                <dd>Provides free medical check-ups, consultations, and medications for those who cannot afford healthcare.</dd>
+            </div>
+
+            <div class="dlt">
+                <dt>Maternal & Child Health:</dt>
+                <dd>Offers health support for pregnant women and new mothers, including prenatal and postnatal care.</dd>
+                <dd>Conducts awareness programs on nutrition and child healthcare.</dd>
+            </div>
+
+            <div class="dlt">
+                <dt>Health Awareness & Education:</dt>
+                <dd>Spreads awareness about hygiene, disease prevention, and general well-being through community workshops and campaigns.</dd>
+                <dd>Distributes educational materials on health-related topics, ensuring that the community has access to vital information.</dd>
+            </div>
+        </dl>
+
+     </section>
+    <!-- Livelihood End -->
+
+<!-- MOE Start -->
+<div class="logos">
+    <h2>Our Partners</h2>
+    <div class="logo_items">
+        <img src="{% static 'img/clogo1.png' %}" alt="Partner Logo 1">
+        <img src="{% static 'img/clogo2.png' %}" alt="Partner Logo 2">
+        <img src="{% static 'img/clogo3.png' %}" alt="Partner Logo 3">
+        <img src="{% static 'img/clogo4.png' %}" alt="Partner Logo 4">
+        <img src="{% static 'img/clogo5.png' %}" alt="Partner Logo 5">
+        <img src="{% static 'img/clogo10.jpg' %}" alt="Partner Logo 10">
+        <img src="{% static 'img/clogo6.jpg' %}" alt="Partner Logo 6">
+        <img src="{% static 'img/clogo7.gif' %}" alt="Partner Logo 7">
+        <img src="{% static 'img/clogo8.png' %}" alt="Partner Logo 8">
+        <img src="{% static 'img/clogo9.png' %}" alt="Partner Logo 9">
+    </div>
+    <div class="logo_items">
+        <img src="{% static 'img/clogo1.png' %}" alt="Partner Logo 1">
+        <img src="{% static 'img/clogo2.png' %}" alt="Partner Logo 2">
+        <img src="{% static 'img/clogo3.png' %}" alt="Partner Logo 3">
+        <img src="{% static 'img/clogo4.png' %}" alt="Partner Logo 4">
+        <img src="{% static 'img/clogo5.png' %}" alt="Partner Logo 5">
+        <img src="{% static 'img/clogo10.jpg' %}" alt="Partner Logo 10">
+        <img src="{% static 'img/clogo6.jpg' %}" alt="Partner Logo 6">
+        <img src="{% static 'img/clogo7.gif' %}" alt="Partner Logo 7">
+        <img src="{% static 'img/clogo8.png' %}" alt="Partner Logo 8">
+        <img src="{% static 'img/clogo9.png' %}" alt="Partner Logo 9">
+    </div>
+</div>
+<!-- MOE End -->
+
+
+<!-- Footer Start -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-bar footer-bar-1">
+                    <a href="{% url 'home' %}">
+                        <img src="{% static 'img/asgardia/ASGARDIA-(white-foundation-bg-remove-3.0).png' %}" alt="">
+                    </a>
+                    <p style="color: white;">The Asgardia Foundation Working closely with needy from remote parts of India and addressing their challenges helped Asgardia.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-link">
+                    <h2>Quick Links</h2>
+                    <a href="{% url 'home' %}">Home</a>
+                    <a href="{% url 'about' %}">About</a>
+                    <a href="{% url 'get_involved' %}">Involved</a>
+                    <a href="{% url 'event' %}">Events</a>
+                    <a href="{% url 'gallery' %}">Gallery</a>
+                    <a href="{% url 'contact' %}">Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-link">
+                    <h2>Popular Links</h2>
+                    <a href="{% url 'employement' %}">Employment</a>
+                    <a href="{% url 'women_empowerment' %}">Women Empowerment</a>
+                    <a href="{% url 'education' %}">Education</a>
+                    <a href="{% url 'health' %}">Health</a>
+                    <a href="{% url 'environment' %}">Environment</a>
+                    <a href="{% url 'daily_meals' %}">Daily Meals</a>
+                    <a href="{% url 'livelihood' %}">Livelihood</a>
+                    <a href="{% url 'csr_impact' %}">CSR Impact</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-contact">
+                    <h2>Contact</h2>
+                    <p><i class="fa fa-phone-alt"></i>
+                        <a href="tel:+91 8667511342" style="color: white;">+91 8667511342</a></p>
+                    <p><i class="fa fa-envelope"></i><a href="mailto:info@asgardiafoundation.org.in" style="color: white;">info@asgardiafoundation.org.in</a></p>
+                    <p><i class="fa fa-map-marker-alt"></i>No 62, Jeenis Road, Saidpet, Near Post Office, Chennai - 600015</p>
+                    <div class="footer-social">
+                        <a class="btn btn-custom" href="https://x.com/asgardiafounda3"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-custom" href="https://www.facebook.com/asgardiafoundation/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-custom" href="https://www.instagram.com/asgardia_foundation?igsh=MTZzMDZ6ODJnYmd3bw=="><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-custom" href="https://www.linkedin.com/in/asgardia-foundation-0b5a7921b?originalSubdomain=in"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container copyright">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; <a href="{% url 'home' %}"> ASGARDIA FOUNDATION</a>, All Right Reserved.</p>
+            </div>
+            <div class="col-md-6">
+                <p>Developed By <a href="https://shanthiitsolution.com/" style="color: #FBFBF9;">SIT</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+  <!-- Back to top button -->
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- Pre Loader -->
+<div id="loader" class="show">
+    <div class="loader"></div>
+</div>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="{% static 'lib/easing/easing.min.js' %}"></script>
+<script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+<script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+<script src="{% static 'lib/parallax/parallax.min.js' %}"></script>
+
+<!-- Contact Javascript File -->
+<script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+<script src="{% static 'mail/contact.js' %}"></script>
+
+<!-- Template Javascript -->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
